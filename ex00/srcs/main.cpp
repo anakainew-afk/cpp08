@@ -13,5 +13,6 @@ int main(){
     if(res == -1)
         return 1;
     std::cout << res << std::endl;
+    num.clear();
     return 0;
 }
