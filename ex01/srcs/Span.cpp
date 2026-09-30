@@ -41,7 +41,7 @@ int Span::longestSpan() const{
 
 int Span::shortestSpan() const {
     if (this->_num.size() < 2)
-        throw std::runtime_error("The span is empty or too short");
+        throw std::runtime_error("The span is empty or too short to lauch the algorithm");
     std::vector<int> copy = _num;
     std::sort(copy.begin(), copy.end());
     int shortest = copy[1] - copy[0];
