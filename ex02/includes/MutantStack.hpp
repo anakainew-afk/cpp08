@@ -15,7 +15,7 @@ public:
 
     MutantStack() : std::stack<T, Container>() {};
 
-    MutantStack<T, Container>(const MutantStack& src) : std::stack<T, Container>(src){
+    MutantStack(const MutantStack& src) : std::stack<T, Container>(src){
         *this = src;
     }
 
